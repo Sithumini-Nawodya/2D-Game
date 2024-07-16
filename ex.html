@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>2D Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body" onkeyup="keyCheck(event);">
+    <div class="background" id="background">
+        <div class="board">
+            <div class="score1" id="score1">Score </div>
+            <div class="score" id="score">0</div>
+        </div>
+        <button class="pauseButton" id="pauseButton" onclick="pause();">pause</button>
+        <button class="playButton" id="playButton" onclick="play();">Play</button>
+
+        <img src="Run (1).png" class="santa" id="santa" />
+
+    </div>
+
+    <div class="gameStart" id="gameStart">
+        <img src="Idle (1).png" class="santa1" />
+        <img src="snowman.gif" class="snow" />
+        <div class="gameName">Santa Clous</div>
+        <div class="lastName">Run</div>
+        <div class="instructions">Instructions</div>
+        <div class="point">*Press Enter Key to run
+            <div>*Press Space Bar to jump</div>
+            <div>*You have to avoid the snowman to win</div>
+            <div>*To win the game, you need to 200 score*</div>
+        </div>
+        <button class="start" id="start" onclick="gst();">Game Start</button>
+
+    </div>
+
+    <div class="gameOver" id="gameOver">
+        <img src="Idle (1).png" class="santa2" />
+
+        <div class="go">Game Over..!</div>
+        <div>_Your Score_</div>
+        <div id="endScore" class="endScore">0</div>
+
+        <button class="button" onclick="re();">Try Again</button>
+    </div>
+    </div>
+
+    <div class="gameWin" id="gameWin">
+
+        <img src="congratz.gif" class="congratz" />
+        <div class="won">...You Won The Game...</div>
+        <img src="snowman.gif" class="snow2" />
+
+
+
+        <button class="winb" id="winb" onclick="wb();">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
